@@ -8,7 +8,7 @@ function News(props) {
   //Article,page or totalResults par useState hook lagaya
   const [articles, setArticles] = useState([]);
   const [page, setPage] = useState(1);
-  const [totalResults, settotalResults] = useState(0);
+  const [totalResults, settotalResults] = useState(1);
   // Function run after reandering matbal pahale return wali chije run hogi
   useEffect(() => {
     updatePage();

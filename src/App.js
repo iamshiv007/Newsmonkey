@@ -2,9 +2,9 @@ import React from 'react'
 import Navbar from './Components/Navbar'
 import News from './Components/News'
 import {
-  BrowserRouter,
   Routes,
   Route,
+  HashRouter,
 } from "react-router-dom";
 
 
@@ -12,7 +12,7 @@ export default function App () {
   let pageSize = 6
     return (
       <div>
-        <BrowserRouter>
+        <HashRouter>
         <Navbar/>
         <div className="container">
           <Routes>
@@ -26,7 +26,7 @@ export default function App () {
         </Route >
         </Routes>
         </div>
-        </BrowserRouter>
+        </HashRouter>
       </div>
     )
 }
